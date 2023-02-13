@@ -311,6 +311,7 @@ using namespace std;
 int main() {
 
   cout<<"hello";
+  cout<<"world";
   // -----------hollow rectangle-------------
 
   // for(int row=0; row<3; row++){
