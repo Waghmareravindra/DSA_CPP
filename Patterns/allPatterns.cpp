@@ -1,4 +1,4 @@
- // #include<iostream>
+// #include<iostream>
 // using namespace std;
 
 // int main(){
@@ -307,11 +307,54 @@
 
 #include <iostream>
 using namespace std;
+// local variable which is always defined 
+// inside in the funtion it cannot use outside the main
 
-int main() {
 
-  cout<<"hello";
-  cout<<"world";
+
+
+//  global variabe which we can use anywhere 
+// out of the function / int main and can 
+// print inside the int main function
+
+  // int  ravi=400;
+
+int main()
+{
+
+// cout<<ravi; // call function   global variable 
+
+// switch case
+
+// int val;
+// cout<<"enter a no :";
+// cin>>val;
+
+// switch(val){
+
+// case 1: cout<<"ravindra";
+//     break;
+// case 2: cout<<"anand";
+//     break;
+// case 3: cout<<"amit";
+//     break;
+// case 4: cout<<"pradip";
+//     break;
+// case 5: cout<<"ankit";
+//     break;
+// default : cout<<"kapil";
+//     break;
+// }
+// cout<<endl;
+
+
+
+
+// pre/increment
+
+  // int a=5;
+  // cout<<(++a)*(++a)<<endl;
+
   // -----------hollow rectangle-------------
 
   // for(int row=0; row<3; row++){
@@ -473,7 +516,6 @@ int main() {
   // int n;
   // cin >> n;
 
-
   // for (int row = 0; row < n; row++) {
   //   for (int col = 0; col < n - row; col++) {
   //     cout << " ";
@@ -489,29 +531,29 @@ int main() {
   //   cout << endl;
   // }
 
-  // // inverted hollow diamond----something problem in this 
+  // // inverted hollow diamond----something problem in this
 
-//   for (int row=0; row<n; row++) {
-//     // spaces
-//     for (int col=0; col<row; col++) {
-//       cout << "$";
-//     }
-//     // star
-//     for (int col=0; col<2*n-2*row-1; col++) {
-//       // if first or last charachter
-//       if (col==0 || col==2*n-2*row-2) {
-//         cout << "*";
-//       } 
-//       else {
-//         // middle spaces
-//         cout << " ";
-//       }
-//     cout << endl;
-    
-//     }
-// }
-// flipped solid diamond ----------
-  
+  //   for (int row=0; row<n; row++) {
+  //     // spaces
+  //     for (int col=0; col<row; col++) {
+  //       cout << "$";
+  //     }
+  //     // star
+  //     for (int col=0; col<2*n-2*row-1; col++) {
+  //       // if first or last charachter
+  //       if (col==0 || col==2*n-2*row-2) {
+  //         cout << "*";
+  //       }
+  //       else {
+  //         // middle spaces
+  //         cout << " ";
+  //       }
+  //     cout << endl;
+
+  //     }
+  // }
+  // flipped solid diamond ----------
+
   // for(int row=0; row<n; row++){
   //   for(int col=0;col<n-row; col++){
   //     cout<<"*";
@@ -525,7 +567,7 @@ int main() {
   //   cout<<endl;
   // }
 
-  // // inverted flipped solid diamond 
+  // // inverted flipped solid diamond
 
   // for(int row=0; row<n; row++){
   //   for(int col=0;col<row+1; col++){
@@ -541,30 +583,30 @@ int main() {
   // }
 
   // fancy pattern
-  
-// for(int row=0; row<n; row++){
-//     for(int col=0;col<row+1; col++){
-//       cout<<row+1;
-//       if(col!=row)
-//         cout<<"*";
-//     }
-//   cout<<endl;
-// }
-// // fancy pattern inverted
-  
-//   for(int row=0; row<n; row++){
-//     for(int col=0;col<n-row; col++){
-//       cout<<n-row;
-//       if(col!=n-row-1)
-//         cout<<"*";
-//     }
-//   cout<<endl;
-// }
+
+  // for(int row=0; row<n; row++){
+  //     for(int col=0;col<row+1; col++){
+  //       cout<<row+1;
+  //       if(col!=row)
+  //         cout<<"*";
+  //     }
+  //   cout<<endl;
+  // }
+  // // fancy pattern inverted
+
+  //   for(int row=0; row<n; row++){
+  //     for(int col=0;col<n-row; col++){
+  //       cout<<n-row;
+  //       if(col!=n-row-1)
+  //         cout<<"*";
+  //     }
+  //   cout<<endl;
+  // }
 
   // Alphabet palindrome pyramid
-  
+
   //  for(int row=0; row<n; row++){
-     
+
   //   int col;
   //   for(int col=0;col<row+1; col++){
   //     int ans=col+1;
@@ -573,7 +615,7 @@ int main() {
   //   }
 
   //     //Alphabet reverse counting print
-  
+
   //   for(int col=row;col>=1; col--){
   //     int ans=col;
   //     char ch=ans+'A'-1;
@@ -583,39 +625,38 @@ int main() {
   //    }
 
   // solid square
-  
+
   // for(int row =0;row<n;row++){
   //   for(int col=0;col<n;col++){
   //     cout<<"*";
   //   }
   //   cout<<endl;
   // }
-  
-// Hollow square--------------
-  
-// for(int row=0; row<6;row++){
-  
-//     if(row==0 || row==5){
-//       for(int col=0; col<6; col++){
-//       cout<<"*";
-//     }
-//       }
-//     else{
-//       cout<<"*";
-//       for(int col=0; col<4; col++){
-//         cout<<" ";
-//       }
-//       cout<<"*";
-//     }
-//     cout<<endl;
-// }
+
+  // Hollow square--------------
+
+  // for(int row=0; row<6;row++){
+
+  //     if(row==0 || row==5){
+  //       for(int col=0; col<6; col++){
+  //       cout<<"*";
+  //     }
+  //       }
+  //     else{
+  //       cout<<"*";
+  //       for(int col=0; col<4; col++){
+  //         cout<<" ";
+  //       }
+  //       cout<<"*";
+  //     }
+  //     cout<<endl;
+  // }
 
   // numeric full pyramid
 
-  
-  // int n; 
+  // int n;
   // cin>>n;
-  
+
   // for(int row=0; row<n; row++){
   //   // space
   //   for(int col=0; col<n-row-1; col++){
@@ -635,4 +676,48 @@ int main() {
   //   cout<<endl;
   // }
 
-  }
+  // Numeric Hollow pyramid-------
+
+  //   for(int row=0; row<6; row++){
+
+  //     // spaces
+  //     for(int col=0; col<6-row-1; col++){
+  //       cout<<" ";
+  //     }
+  // // nummbers with spaces in between
+
+  //   int start=1;
+  //     for(int col=0; col<2*row+1; col++){
+
+  //       // first row or last row
+
+  //     if(row==0||row==6-1){
+  //       if(col%2==0){
+  //         // for even numbers
+  //         cout<<start;
+  //         start++;
+  //       }
+
+  //       else{
+  //         //  for odd numbers
+  //         cout<<" ";
+  //       }
+  //     }
+  //     else {
+  //       // for first col
+  //       if(col==0){
+  //         cout<<1;
+  //       }
+  //         // for last col
+  //       else if(col==2*row+1-1){
+  //         cout<<row+1;
+  //       }
+  //       else{
+  //         cout<<" ";
+  //       }
+  //     }
+  //       }
+  //     cout<<endl;
+  //   }
+ 
+}
