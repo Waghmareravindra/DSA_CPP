@@ -307,22 +307,20 @@
 
 #include <iostream>
 using namespace std;
-// local variable which is always defined 
+// local variable which is always defined
 // inside in the funtion it cannot use outside the main
 
-
-
-
-//  global variabe which we can use anywhere 
-// out of the function / int main and can 
+//  global variabe which we can use anywhere
+// out of the function / int main and can
 // print inside the int main function
 
-  // int  ravi=400;
+// int  ravi=400;
 
-int main()
-{
+// int main()
+// {
 
-// cout<<ravi; // call function   global variable 
+// return 0;
+// cout<<ravi; // call function   global variable
 
 // switch case
 
@@ -347,377 +345,470 @@ int main()
 // }
 // cout<<endl;
 
-
-
-
 // pre/increment
 
-  // int a=5;
-  // cout<<(++a)*(++a)<<endl;
+// int a=5;
+// cout<<(++a)*(++a)<<endl;
 
-  // -----------hollow rectangle-------------
+// -----------hollow rectangle-------------
 
-  // for(int row=0; row<3; row++){
-  //   if(row==0||row==2){
-  //     for(int col=0;col<5;col++){
-  //       cout<<"*";
-  //     }
-  //   }
-  //   else{
-  //     cout<<"*";
-  //     for(int k=0; k<3; k++){
-  //       cout<<" ";
-  //     }
-  //     cout<<"*";
-  //   }
-  //   cout<<endl;
-  // }
-  // //  hollow rectangle----------- using
-  // count---------------------------------------
+// for(int row=0; row<3; row++){
+//   if(row==0||row==2){
+//     for(int col=0;col<5;col++){
+//       cout<<"*";
+//     }
+//   }
+//   else{
+//     cout<<"*";
+//     for(int k=0; k<3; k++){
+//       cout<<" ";
+//     }
+//     cout<<"*";
+//   }
+//   cout<<endl;
+// }
+// //  hollow rectangle----------- using
+// count---------------------------------------
 
-  // int rowcount, colcount;
-  // cin>> rowcount;
-  // cin>>colcount;
-  // for(int row=0; row<rowcount; row++){
-  //   if(row==0||row==rowcount-1){
-  //     for(int col=0; col<colcount;col++){
-  //       cout<<"*";
-  //     }
-  //   }
-  //   else{
-  //     cout<<"*";
-  //     for(int col=0; col<colcount-2; col++){
-  //       cout<<" ";
-  //     }
-  //     cout<<"*";
-  //   }
-  //   cout<<endl;
-  // }
+// int rowcount, colcount;
+// cin>> rowcount;
+// cin>>colcount;
+// for(int row=0; row<rowcount; row++){
+//   if(row==0||row==rowcount-1){
+//     for(int col=0; col<colcount;col++){
+//       cout<<"*";
+//     }
+//   }
+//   else{
+//     cout<<"*";
+//     for(int col=0; col<colcount-2; col++){
+//       cout<<" ";
+//     }
+//     cout<<"*";
+//   }
+//   cout<<endl;
+// }
 
-  // //  2nd Method for hollow rectangle------------------------
+// //  2nd Method for hollow rectangle------------------------
 
-  // for(int row=0; row<6; row++){
-  //   if(row==0||row==5){
-  //     for(int col=0; col<8; col++){
-  //       cout<<"*";
-  //     }
-  //   }
-  //   else{
-  //     cout<<"*";
-  //     for(int col=0; col<6; col++){
-  //       cout<<" ";
-  //     }
-  //     cout<<"*";
-  //   }
-  //   cout<<endl;
-  // }
+// for(int row=0; row<6; row++){
+//   if(row==0||row==5){
+//     for(int col=0; col<8; col++){
+//       cout<<"*";
+//     }
+//   }
+//   else{
+//     cout<<"*";
+//     for(int col=0; col<6; col++){
+//       cout<<" ";
+//     }
+//     cout<<"*";
+//   }
+//   cout<<endl;
+// }
 
-  // // half pyramid
+// // half pyramid
 
-  // for(int row=0;row<6; row++){
-  //   for(int col=0; col<row+1; col++){
-  //     cout<<"*";
-  //   }
-  //  cout<<endl; }
+// for(int row=0;row<6; row++){
+//   for(int col=0; col<row+1; col++){
+//     cout<<"*";
+//   }
+//  cout<<endl; }
 
-  // inverted half pyramid
+// inverted half pyramid
 
-  // for(int row=0;row<6; row++){
-  //   for(int col=0; col<6-row; col++){
-  //     cout<<"*";
-  //   }
-  //  cout<<endl; }
+// for(int row=0;row<6; row++){
+//   for(int col=0; col<6-row; col++){
+//     cout<<"*";
+//   }
+//  cout<<endl; }
 
-  // numeric half pyramid
+// numeric half pyramid
 
-  // for(int row=0;row<6; row++){
-  //   for(int col=0; col<row+1; col++){
-  //     cout<<col+1;
-  //   }
-  //  cout<<endl; }
+// for(int row=0;row<6; row++){
+//   for(int col=0; col<row+1; col++){
+//     cout<<col+1;
+//   }
+//  cout<<endl; }
 
-  // inverted numeric half pyramid
+// inverted numeric half pyramid
 
-  // for(int row=0;row<6; row++){
-  //  for(int col=0; col<6-row; col++){
-  //    cout<<col+1;
-  //  }
-  // cout<<endl; }
+// for(int row=0;row<6; row++){
+//  for(int col=0; col<6-row; col++){
+//    cout<<col+1;
+//  }
+// cout<<endl; }
 
-  // full pyramid-----
+// full pyramid-----
 
-  // for(int row=0; row<5; row++){
-  //     for(int col=0;col<5-row; col++){
-  //       cout<<" ";
-  //     }
-  //   for(int col=0;col<row+1; col++){
-  //     cout<<"*"<<" ";
-  //   }
-  //   cout<<endl;
-  //   }
+// for(int row=0; row<5; row++){
+//     for(int col=0;col<5-row; col++){
+//       cout<<" ";
+//     }
+//   for(int col=0;col<row+1; col++){
+//     cout<<"*"<<" ";
+//   }
+//   cout<<endl;
+//   }
 
-  // inverted full pyramid
+// inverted full pyramid
 
-  // for(int row=0; row<5; row++){
-  //     for(int col=0;col<row+1; col++){
-  //       cout<<" ";
-  //     }
-  //   for(int col=0;col<5-row; col++){
-  //     cout<<"*"<<" ";
-  //   }
-  //   cout<<endl;
-  //   }
+// for(int row=0; row<5; row++){
+//     for(int col=0;col<row+1; col++){
+//       cout<<" ";
+//     }
+//   for(int col=0;col<5-row; col++){
+//     cout<<"*"<<" ";
+//   }
+//   cout<<endl;
+//   }
 
-  // numerical full pyramid
-  // space
-  // for(int row=0; row<5; row++){
-  //     for(int col=0;col<5-row; col++){
-  //       cout<<"* ";
-  //     }
-  //   // numbers
-  //   for(int col=0;col<row+1; col++){
-  //     cout<<row+col+1<<" ";
-  //   }
-  //   // reverse
-  //   for(int col=2; col<<4-; col++){
-  //     cout<<row-1<<" ";
-  //   }
+// numerical full pyramid
+// space
+// for(int row=0; row<5; row++){
+//     for(int col=0;col<5-row; col++){
+//       cout<<"* ";
+//     }
+//   // numbers
+//   for(int col=0;col<row+1; col++){
+//     cout<<row+col+1<<" ";
+//   }
+//   // reverse
+//   for(int col=2; col<<4-; col++){
+//     cout<<row-1<<" ";
+//   }
 
-  //   cout<<endl;
-  //   }
+//   cout<<endl;
+//   }
 
-  // solid diamond-----------
+// solid diamond-----------
 
-  // full pyramid-----
+// full pyramid-----
 
-  // for(int row=0; row<5; row++){
-  //     for(int col=0;col<5-row; col++){
-  //       cout<<" ";
-  //     }
-  //   for(int col=0;col<row+1; col++){
-  //     cout<<"*"<<" ";
-  //   }
-  //   cout<<endl;
-  //   }
+// for(int row=0; row<5; row++){
+//     for(int col=0;col<5-row; col++){
+//       cout<<" ";
+//     }
+//   for(int col=0;col<row+1; col++){
+//     cout<<"*"<<" ";
+//   }
+//   cout<<endl;
+//   }
 
-  //   // inverted full pyramid
+//   // inverted full pyramid
 
-  // for(int row=0; row<5; row++){
-  //     for(int col=0;col<row+1; col++){
-  //       cout<<" ";
-  //     }
-  //   for(int col=0;col<5-row; col++){
-  //     cout<<"*"<<" ";
-  //   }
-  //   cout<<endl;
-  //   }
+// for(int row=0; row<5; row++){
+//     for(int col=0;col<row+1; col++){
+//       cout<<" ";
+//     }
+//   for(int col=0;col<5-row; col++){
+//     cout<<"*"<<" ";
+//   }
+//   cout<<endl;
+//   }
 
-  // hollow diamond-----------
-  // int n;
-  // cin >> n;
+// hollow diamond-----------
+// int n;
+// cin >> n;
 
-  // for (int row = 0; row < n; row++) {
-  //   for (int col = 0; col < n - row; col++) {
-  //     cout << " ";
-  //   }
-  //   for (int col = 0; col < 2 * row + 1; col++) {
-  //     if (col == 0 || col == 2 * row) {
-  //       cout << "*";
-  //     } else {
-  //       cout << " ";
-  //     }
-  //   }
+// for (int row = 0; row < n; row++) {
+//   for (int col = 0; col < n - row; col++) {
+//     cout << " ";
+//   }
+//   for (int col = 0; col < 2 * row + 1; col++) {
+//     if (col == 0 || col == 2 * row) {
+//       cout << "*";
+//     } else {
+//       cout << " ";
+//     }
+//   }
 
-  //   cout << endl;
-  // }
+//   cout << endl;
+// }
 
-  // // inverted hollow diamond----something problem in this
+// // inverted hollow diamond----something problem in this
 
-  //   for (int row=0; row<n; row++) {
-  //     // spaces
-  //     for (int col=0; col<row; col++) {
-  //       cout << "$";
-  //     }
-  //     // star
-  //     for (int col=0; col<2*n-2*row-1; col++) {
-  //       // if first or last charachter
-  //       if (col==0 || col==2*n-2*row-2) {
-  //         cout << "*";
-  //       }
-  //       else {
-  //         // middle spaces
-  //         cout << " ";
-  //       }
-  //     cout << endl;
+//   for (int row=0; row<n; row++) {
+//     // spaces
+//     for (int col=0; col<row; col++) {
+//       cout << "$";
+//     }
+//     // star
+//     for (int col=0; col<2*n-2*row-1; col++) {
+//       // if first or last charachter
+//       if (col==0 || col==2*n-2*row-2) {
+//         cout << "*";
+//       }
+//       else {
+//         // middle spaces
+//         cout << " ";
+//       }
+//     cout << endl;
 
-  //     }
-  // }
-  // flipped solid diamond ----------
+//     }
+// }
+// flipped solid diamond ----------
 
-  // for(int row=0; row<n; row++){
-  //   for(int col=0;col<n-row; col++){
-  //     cout<<"*";
-  //   }
-  // for(int col=0; col<2*row+1;col++){
-  //   cout<<" ";
-  // }
-  //   for(int col=0; col<n-row; col++){
-  //     cout<<"*";
-  //   }
-  //   cout<<endl;
-  // }
+// for(int row=0; row<n; row++){
+//   for(int col=0;col<n-row; col++){
+//     cout<<"*";
+//   }
+// for(int col=0; col<2*row+1;col++){
+//   cout<<" ";
+// }
+//   for(int col=0; col<n-row; col++){
+//     cout<<"*";
+//   }
+//   cout<<endl;
+// }
 
-  // // inverted flipped solid diamond
+// // inverted flipped solid diamond
 
-  // for(int row=0; row<n; row++){
-  //   for(int col=0;col<row+1; col++){
-  //     cout<<"*";
-  //   }
-  // for(int col=0; col<2*n-2*row-1;col++){
-  //   cout<<" ";
-  // }
-  //   for(int col=0; col<row+1; col++){
-  //     cout<<"*";
-  //   }
-  //   cout<<endl;
-  // }
+// for(int row=0; row<n; row++){
+//   for(int col=0;col<row+1; col++){
+//     cout<<"*";
+//   }
+// for(int col=0; col<2*n-2*row-1;col++){
+//   cout<<" ";
+// }
+//   for(int col=0; col<row+1; col++){
+//     cout<<"*";
+//   }
+//   cout<<endl;
+// }
 
-  // fancy pattern
+// fancy pattern
 
-  // for(int row=0; row<n; row++){
-  //     for(int col=0;col<row+1; col++){
-  //       cout<<row+1;
-  //       if(col!=row)
-  //         cout<<"*";
-  //     }
-  //   cout<<endl;
-  // }
-  // // fancy pattern inverted
+// for(int row=0; row<n; row++){
+//     for(int col=0;col<row+1; col++){
+//       cout<<row+1;
+//       if(col!=row)
+//         cout<<"*";
+//     }
+//   cout<<endl;
+// }
+// // fancy pattern inverted
 
-  //   for(int row=0; row<n; row++){
-  //     for(int col=0;col<n-row; col++){
-  //       cout<<n-row;
-  //       if(col!=n-row-1)
-  //         cout<<"*";
-  //     }
-  //   cout<<endl;
-  // }
+//   for(int row=0; row<n; row++){
+//     for(int col=0;col<n-row; col++){
+//       cout<<n-row;
+//       if(col!=n-row-1)
+//         cout<<"*";
+//     }
+//   cout<<endl;
+// }
 
-  // Alphabet palindrome pyramid
+// Alphabet palindrome pyramid
 
-  //  for(int row=0; row<n; row++){
+//  for(int row=0; row<n; row++){
 
-  //   int col;
-  //   for(int col=0;col<row+1; col++){
-  //     int ans=col+1;
-  //     char ch=ans+'A'-1;
-  //       cout<<ch;
-  //   }
+//   int col;
+//   for(int col=0;col<row+1; col++){
+//     int ans=col+1;
+//     char ch=ans+'A'-1;
+//       cout<<ch;
+//   }
 
-  //     //Alphabet reverse counting print
+//     //Alphabet reverse counting print
 
-  //   for(int col=row;col>=1; col--){
-  //     int ans=col;
-  //     char ch=ans+'A'-1;
-  //       cout<<ch;
-  //   }
-  // cout<<endl;
-  //    }
+//   for(int col=row;col>=1; col--){
+//     int ans=col;
+//     char ch=ans+'A'-1;
+//       cout<<ch;
+//   }
+// cout<<endl;
+//    }
 
-  // solid square
+// solid square
 
-  // for(int row =0;row<n;row++){
-  //   for(int col=0;col<n;col++){
-  //     cout<<"*";
-  //   }
-  //   cout<<endl;
-  // }
+// for(int row =0;row<n;row++){
+//   for(int col=0;col<n;col++){
+//     cout<<"*";
+//   }
+//   cout<<endl;
+// }
 
-  // Hollow square--------------
+// Hollow square--------------
 
-  // for(int row=0; row<6;row++){
+// for(int row=0; row<6;row++){
 
-  //     if(row==0 || row==5){
-  //       for(int col=0; col<6; col++){
-  //       cout<<"*";
-  //     }
-  //       }
-  //     else{
-  //       cout<<"*";
-  //       for(int col=0; col<4; col++){
-  //         cout<<" ";
-  //       }
-  //       cout<<"*";
-  //     }
-  //     cout<<endl;
-  // }
+//     if(row==0 || row==5){
+//       for(int col=0; col<6; col++){
+//       cout<<"*";
+//     }
+//       }
+//     else{
+//       cout<<"*";
+//       for(int col=0; col<4; col++){
+//         cout<<" ";
+//       }
+//       cout<<"*";
+//     }
+//     cout<<endl;
+// }
 
-  // numeric full pyramid
+// numeric full pyramid
 
-  // int n;
-  // cin>>n;
+// int n;
+// cin>>n;
 
-  // for(int row=0; row<n; row++){
-  //   // space
-  //   for(int col=0; col<n-row-1; col++){
-  //     cout<<" ";
-  //   }
-  //   // numbers
-  //   for(int col=0; col<row+1;col++){
-  //     cout<< row+ col+1;
-  //   }
+// for(int row=0; row<n; row++){
+//   // space
+//   for(int col=0; col<n-row-1; col++){
+//     cout<<" ";
+//   }
+//   // numbers
+//   for(int col=0; col<row+1;col++){
+//     cout<< row+ col+1;
+//   }
 
-  //   // reverse counting
-  //   int number= 2*row;
-  //   for(int col=0; col<row; col++){
-  //     cout<<number;
-  //     number--;
-  //   }
-  //   cout<<endl;
-  // }
+//   // reverse counting
+//   int number= 2*row;
+//   for(int col=0; col<row; col++){
+//     cout<<number;
+//     number--;
+//   }
+//   cout<<endl;
+// }
 
-  // Numeric Hollow pyramid-------
+// Numeric Hollow pyramid-------
 
-  //   for(int row=0; row<6; row++){
+//   for(int row=0; row<6; row++){
 
-  //     // spaces
-  //     for(int col=0; col<6-row-1; col++){
-  //       cout<<" ";
-  //     }
-  // // nummbers with spaces in between
+//     // spaces
+//     for(int col=0; col<6-row-1; col++){
+//       cout<<" ";
+//     }
+// // nummbers with spaces in between
 
-  //   int start=1;
-  //     for(int col=0; col<2*row+1; col++){
+//   int start=1;
+//     for(int col=0; col<2*row+1; col++){
 
-  //       // first row or last row
+//       // first row or last row
 
-  //     if(row==0||row==6-1){
-  //       if(col%2==0){
-  //         // for even numbers
-  //         cout<<start;
-  //         start++;
-  //       }
+//     if(row==0||row==6-1){
+//       if(col%2==0){
+//         // for even numbers
+//         cout<<start;
+//         start++;
+//       }
 
-  //       else{
-  //         //  for odd numbers
-  //         cout<<" ";
-  //       }
-  //     }
-  //     else {
-  //       // for first col
-  //       if(col==0){
-  //         cout<<1;
-  //       }
-  //         // for last col
-  //       else if(col==2*row+1-1){
-  //         cout<<row+1;
-  //       }
-  //       else{
-  //         cout<<" ";
-  //       }
-  //     }
-  //       }
-  //     cout<<endl;
-  //   }
- 
-}
+//       else{
+//         //  for odd numbers
+//         cout<<" ";
+//       }
+//     }
+//     else {
+//       // for first col
+//       if(col==0){
+//         cout<<1;
+//       }
+//         // for last col
+//       else if(col==2*row+1-1){
+//         cout<<row+1;
+//       }
+//       else{
+//         cout<<" ";
+//       }
+//     }
+//       }
+//     cout<<endl;
+//   }
+
+// function------------------
+
+// function declaration and define
+
+// int add(int a , int b){
+//     int result = a+b;
+//     return result;
+//   }
+
+// int main(){
+
+//   int a;
+//   cout<<"enter a value of a :";
+//   cin>>a;
+
+//   int b;
+//   cout<<"enter a value of b :";
+//   cin>>b;
+
+//   int sum = add(a, b);
+
+//   cout<<"sum of a and b is :"<<sum<<endl;
+// }
+
+// find maximum number -------------
+
+// funtion declaration
+
+// int findmax(int num1 , int num2, int num3){
+//     if(num1>num2 && num1>num3){
+//       return num1;
+//     }
+//     else if(num2>num1 && num2>num3){
+//       return num2;
+//     }
+//     else{
+//       return num3;
+//     }
+// }
+
+// int main(){
+
+//   int a,b,c;
+//   cin>> a>>b>>c;
+
+//   int maxmumnumber = findmax(a,b,c);
+//   cout<<maxmumnumber<<endl;
+
+//   return 0;
+// }
+
+// counting from 0 to n ------
+
+// void printcounting(int n){ // function declaration
+//   for(int i=0; i<=n; i++){
+//     cout<<i<<" ";
+//   }
+//   cout<<endl;
+// }
+// int main(){
+
+//   int n;
+//   cout<<"Enter the value of n :";
+//   cin>>n;
+
+//   printcounting(n);             //funtion call
+//   return 0;
+// }
+
+//  grade in function
+
+// char grade(int marks){       // grade function declaration
+
+//   if(marks>90){
+//   return 'A';
+//   }
+//   else if(marks>80){
+//   return 'B';}
+//   else if(marks>70){
+//   return 'C';}
+//   else if(marks>60){
+//   return 'D';}
+//   else{
+//   return 'E';
+// }
+// }
+
+// int main(){
+//   int marks;
+//   cout<<"Enter the marks :";
+//   cin>>marks;
+
+//   char showgrade=grade(marks);
+//   cout<<showgrade<<endl;
+//   return 0;
+// }
+
