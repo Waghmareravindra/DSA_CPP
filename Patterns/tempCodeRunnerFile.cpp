@@ -1,2 +1,5 @@
- main()
-// {
+ream>
+using namespace std;
+
+int main()
+{
