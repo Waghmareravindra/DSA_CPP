@@ -4,15 +4,15 @@
 using namespace std;
 
 
-// int findunique(vector<int>arr){
-//   int ans=0;
+int findunique(vector<int>arr){
+  int ans=0;
 
-//   for(int i=0; i<arr.size();i++){
-//     ans=ans^arr[i];
-//   }
-//   return ans;
-// }
-// int main(){
+  for(int i=0; i<arr.size();i++){
+    ans=ans^arr[i];
+  }
+  return ans;
+}
+int main(){
 
 // // create vector
 // vector<int>arr;
@@ -38,22 +38,22 @@ using namespace std;
 
         // unique element
 
-// int n;
-// cout<<"Enter the size of array"<<endl;
-// cin>>n;
+int n;
+cout<<"Enter the size of array"<<endl;
+cin>>n;
 
-// vector<int>arr(n);
-// cout<<"Enter the elements"<<endl;
+vector<int>arr(n);
+cout<<"Enter the elements"<<endl;
 
-// // taking input
-// for(int i=0; i<arr.size(); i++){
-//   cin>>arr[i];
-// }
+// taking input
+for(int i=0; i<arr.size(); i++){
+  cin>>arr[i];
+}
 
-// int uniqueElement = findunique(arr); 
+int uniqueElement = findunique(arr); 
 
-// cout<<"Unique element is"<<uniqueElement<<endl;
-// return 0;
+cout<<"Unique element is"<<uniqueElement<<endl;
+return 0;
 
 
 //  Union of Array
@@ -111,7 +111,7 @@ using namespace std;
 //   cout<<ans[i]<<" ";
 // }
 // return 0;
-// }
+}
 
 
 

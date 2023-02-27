@@ -11,7 +11,9 @@
     "vector": "cpp",
     "string_view": "cpp",
     "initializer_list": "cpp",
-    "find_first_occ": "cpp"
+    "find_first_occ": "cpp",
+    "random": "cpp",
+    "utility": "cpp"
   },
   "C_Cpp.errorSquiggles": "disabled"
 }
