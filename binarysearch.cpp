@@ -34,67 +34,72 @@ using namespace std;
 
 // // first occurence
 
-// int firstocc(vector<int> arr, int target){
-//   int s=0;
-//   int e=arr.size()-1;
-  
-//   int mid=s+(e-s)/2;
+// int firstocc(vector<int> arr, int target)
+// {
+//   int s = 0;
+//   int e = arr.size() - 1;
 
-//   int ans=-1;
+//   int mid = s + (e - s) / 2;
 
-//   while(s<=e){
-//     if(arr[mid]==target){
-//       ans=mid;
-//       e=mid-1;
+//   int ans = -1;
+
+//   while (s <= e)
+//   {
+//     if (arr[mid] == target)
+//     {
+//       ans = mid;
+//       e = mid - 1;
 //     }
-//     else if(target>arr[mid]){
-//       s=mid+1;
+//     else if (target > arr[mid])
+//     {
+//       s = mid + 1;
 //     }
-//     else if(target<arr[mid]){
-//       e=mid-1;
+//     else if (target < arr[mid])
+//     {
+//       e = mid - 1;
 //     }
-//     mid=s+(e-s)/2; // update mid store last ans
+//     mid = s + (e - s) / 2; // update mid store last ans
 //   }
-//   return ans; //not return 0 return ans or etc which you declare variable
+//   return ans; // not return 0 return ans or etc which you declare variable
 // }
-
-
 
 // find last occurence
 
-// int lastocc(vector<int> arr, int target){
-//   int s=0;
-//   int e=arr.size()-1;
-  
-//   int mid=s+(e-s)/2;
+// int lastocc(vector<int> arr, int target)
+// {
+//   int s = 0;
+//   int e = arr.size() - 1;
 
-//   int ans=-1;
+//   int mid = s + (e - s) / 2;
 
-//   while(s<=e){
-//     if(arr[mid]==target){
-//       ans=mid;
-//       s=mid+1;
+//   int ans = -1;
+
+//   while (s <= e)
+//   {
+//     if (arr[mid] == target)
+//     {
+//       ans = mid;
+//       s = mid + 1;
 //     }
-//     else if(target>arr[mid]){
-//       s=mid+1;
+//     else if (target > arr[mid])
+//     {
+//       s = mid + 1;
 //     }
-//     else if(arr[mid]>target){
-//       e=mid-1;
+//     else if (arr[mid] > target)
+//     {
+//       e = mid - 1;
 //     }
-//     mid=s+(e-s)/2; // update mid store last ans
+//     mid = s + (e - s) / 2; // update mid store last ans
 //   }
-//   return ans; //not return 0 return ans or etc which you declare variable
+//   return ans; // not return 0 return ans or etc which you declare variable
 // }
-
-
-
 
 //  find missing number
 
 // Function to get the missing number
 // int MissingNumber(int a[], int n)
 // {
- 
+
 //     int total = (n) * (n +1)/ 2;
 //     for (int i = 0; i < n; i++)
 //         total = a[i];
@@ -123,7 +128,6 @@ int main()
 
   // return 0;
 
-
   // int v=
   // vector<int> v{1,2,3,4,5,6};
 
@@ -133,56 +137,48 @@ int main()
   // else{
   //   cout<<"not found"<<endl;
 
+  // //      find first occurence
 
-  // //      find first occurence  
-
-  // vector<int> v{1,1,1,1,1,1,3,4,4,4,4,4,6,7,7,7,7,7,7};
+  // vector<int> v{1, 1, 1, 1, 1, 1, 3, 4, 4, 4, 4, 4, 6, 7, 7, 7, 7, 7, 7};
   // // int target =4;
 
-  // int ans=firstocc(v,4);
+  // int ans = firstocc(v, 4);
 
-  // cout<<"ans is "<<ans<<endl;
+  // cout << "ans is " << ans << endl;
 
   // return 0;
 
-
-
-/* there is one consept upper bound ans lower bound 
- for find low and high value  */ 
+  /* there is one consept upper bound ans lower bound
+   for find low and high value  */
 
   /*std::vector<int>::iterator low,up;
   low=std::lower_bound (v.begin(), v.end(), 20); //          ^
   up= std::upper_bound (v.begin(), v.end(), 20); // */
 
-  //      find and last occurence 
+  //      find and last occurence
 
-  // vector<int> v{1,1,1,1,1,1,3,4,4,4,4,4,6,7,7,7,7,7,7};
+  // vector<int> v{1, 1, 1, 1, 1, 1, 3, 4, 4, 4, 4, 4, 6, 7, 7, 7, 7, 7, 7};
   // // int target =4;
 
-  // int ans=lastocc(v,4);
+  // int ans = lastocc(v, 4);
 
-  // cout<<"ans is "<<ans<<endl;
+  // cout << "ans is " << ans << endl;
 
   // return 0;
 
+  //  find missing number
 
-//  find missing number
-
-// code wrong 
+  // code wrong
 
   // int a[4]={1,2,3,5};
   // int b[5]={1,2,3,4,5};
 
-  // int c=a^b; 
+  // int c=a^b;
   // // int getmissingnumber(arr,size,c);
 
   // cout<<"missing number is "<<c<<endl;
 
-
   //  find missing number
 
   // home work given
-
-  
-  }
-  
+}

@@ -1,26 +1,8 @@
-int binarysearch(int arr[], int size, int key)
-{
+vector<int> v{1, 1, 1, 1, 1, 1, 3, 4, 4, 4, 4, 4, 6, 7, 7, 7, 7, 7, 7};
+  // int target =4;
 
-  int start = 0;
-  int end = size-1;
+  int ans = lastocc(v, 4);
 
-  int mid = (start + end) / 2;
+  cout << "ans is " << ans << endl;
 
-  while (start <= end)
-  {
-    if (arr[mid] == key)
-    {
-      return mid;
-    }
-    if (key > arr[mid])
-    {
-      start = mid + 1;
-    }
-    else
-    {
-      end = mid - 1;
-    }
-    mid = (start + end) / 2;
-  }
-  return -1;
-}
+  return 0;
