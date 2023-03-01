@@ -16,6 +16,7 @@ bool binarysearch(int arr[][4], int row, int col, int target){
     int colindex=mid%col;
 
     if(arr[rowindex][colindex]==target){
+      cout<<"found at "<<rowindex<<" "<<colindex<<endl;
       return true; 
       }
       if(arr[rowindex][colindex]<target){
@@ -32,12 +33,12 @@ bool binarysearch(int arr[][4], int row, int col, int target){
 
 int main(){
 
-  int arr[5][4]={{1,2,3,4},{5,6,7,8},{9,10,11,12},{13,14,15,16},{17,18,19,20}}
+  int arr[5][4]={{1,2,3,4},{5,6,7,8},{9,10,11,12},{13,14,15,16},{17,18,19,20}};
 
   int row=5;
   int col=4;
 
-  int target=19;
+  int target=19 ;
 
   bool ans=binarysearch(arr,5,4,target);
 
