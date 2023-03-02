@@ -1,59 +1,62 @@
-// #include<iostream>
-// #include<vector>
+// Leet code Search in Rotated Sorted Array 
 
-// using namespace std;
+class Solution {
+public:
+int findPivot(vector<int> arr) {
+  int s = 0;
+  int e = arr.size() - 1;
+  int mid = s + (e-s)/2;
 
-// int main(){
-
-// //  search in rotated sorted array
-
-
-
-// }
-
-
-
-#include<iostream>
-#include<vector>
-
-using namespace std;
-
-int findsqrt(int n){
-
-  int s=0;
-  int e=n;
-
-  int mid=s+(e-s)/2;
-
-  int target=n;
-  int ans=-1;
-
-  while(s<=e){
-    if(mid*mid==target){
+  while(s <= e) {
+    if(s == e) {
+      //single element
+      return s;
+    }
+    if(mid <= e && arr[mid] > arr[mid+1])
       return mid;
-    }
-    if(mid*mid>target){
-      e=mid-1;
-    }
-    else{
-      ans=mid;
-      s=mid+1;
-    }
-    mid=s+(e-s)/2;
+    if(mid-1 >= s && arr[mid-1] > arr[mid])
+      return mid-1;
+
+    if(arr[s] > arr[mid]) 
+      e = mid - 1;
+    else
+      s = mid + 1;
+
+    mid = s + (e-s)/2;
+
   }
-  return ans;
+  return -1;
 }
+int binarySearch(vector<int> arr, int s, int e, int target) {
+    int mid = s + (e-s)/2;
+
+    while(s <= e) {
+        if(arr[mid] == target) {
+            return mid;
+        }
+        if(arr[mid] > target)
+            e = mid - 1;
+        else
+            s = mid + 1;
+        mid = s +(e-s)/2;
+    }
+    return -1;
 
 
-int main(){
-
-
-  int n;
-  cout<<"Enter the number";
-  cin>>n;
-
-  int ans=findsqrt(n);
-  cout<<"Ans is "<<ans<<endl;
-
-  return 0;
 }
+    int search(vector<int>& nums, int target) {
+
+        int pivotIndex = findPivot(nums);
+        int ans = 0;
+        if(target >= nums[0] && target <= nums[pivotIndex]) {
+            ans = binarySearch(nums, 0, pivotIndex, target);
+
+        }
+        else {
+            ans = binarySearch(nums, pivotIndex+1, nums.size()-1, target);
+        }
+
+    return ans;
+   
+    }
+};
