@@ -35,7 +35,7 @@ int solve(int dividend, int divisor) {
 }
 
 int main() {
-  int dividend = 56;
+  int dividend = -56;
   int divisor = 7;
 
   int ans = solve(dividend, divisor);
