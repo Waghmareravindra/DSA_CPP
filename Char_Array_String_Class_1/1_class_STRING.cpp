@@ -79,6 +79,7 @@ if(sentence.find(target)==string::npos){
   // cout<<str<<endl;
 
   string str1="ABCDEFGHIJKLMNO";
+  //  for removing after 10 number words
   str1.erase(10,10);
   cout<<str1;
 
