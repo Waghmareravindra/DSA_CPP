@@ -4,16 +4,16 @@
 #include <map>
 using namespace std;
 
-// bool cmp(char first, char second)
-// {
-//   return first > second;
-// }
+bool cmp(char first, char second)
+{
+  return first > second;
+}
 
 bool compare(int a, int b)
 {
   cout << "First number is: " << a;
   cout << " Second number is: " << b << endl;
-       << endl;
+
   return a > b;
 }
 
