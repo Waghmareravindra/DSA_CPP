@@ -10,10 +10,11 @@ int fastexponentiation(int a, int b)
     {
         if (b & 1)
         {
+            // odd
             ans *= a;
         }
         a = a * a;
-        b >>= 1;
+        b >>= 1; //b=b/2
     }
     return ans;
 } // Time Complexity is O(log b)
@@ -32,8 +33,8 @@ int main()
 {
 
     // fast exponentiation
-    cout << slowexponentiation(2, 5);
-    // cout << fastexponentiation(2, 5);
+    cout << slowexponentiation(2, 5)<<endl;
+    cout << fastexponentiation(2, 5);
 
     // int arr[5]={1,2,3,4,5};
     // int *ptr=arr;
