@@ -22,7 +22,6 @@
 //       cout<<"*";
 //     }
 //       cout<<endl;
-
 //   }
 // half pyramid--------------------------------------------
 // int n;
@@ -305,8 +304,8 @@
 //   cout<<endl;
 //   }
 
-#include <iostream>
-using namespace std;
+// #include <iostream>
+// using namespace std;
 // local variable which is always defined
 // inside in the funtion it cannot use outside the main
 
@@ -811,3 +810,23 @@ using namespace std;
 //   cout<<showgrade<<endl;
 //   return 0;
 // }
+
+
+
+#include<iostream>
+using namespace std;
+
+int main(){
+
+  int n=5;
+  for(int row=0;row<n;row++){
+    for(int col=0;col<row+1;col++){
+      cout<<" ";
+    }
+    for(int col=0;col<n-row;col++){
+      cout<<"* ";
+    }
+    cout<<endl;
+  }
+
+}
