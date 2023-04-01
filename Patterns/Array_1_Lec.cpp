@@ -2,7 +2,7 @@
 #include<limits.h>
 #include<cstring>
 
-using namespace std;
+// using namespace std;
 
 // bool find(int arr[],int size,int key){
 
