@@ -1,11 +1,15 @@
-int row=3;
-      int col=5;
+#include<iostream>
+using namespace std;
 
-      vector<vector<int> >arr(row, vector<int>(col, 1));
-      for(int i=0; i<arr.size();i++){
-        for(int j=0; j<arr[i].size(); j++){
-          cout<<arr[i][j]<<" ";
-        }
-        cout<<endl;
-      }
-      return 0;
+int main(){
+
+  int n=5;
+  for(int row=0;row<n;row++){
+    for(int col=0;col<row+1;col++){
+      cout<<" ";
+    }
+    for(int col=0;col<n-row;col++){
+      cout<<"* ";
+    }
+    cout<<endl;
+  }
